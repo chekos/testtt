@@ -13,5 +13,5 @@ jobs:
     steps:
     - name: probando
       run: |
-        export HOY = TZ=":America/Mexico_City" date +"%Y-%m-%d"
+        export HOY=TZ=":America/Mexico_City" date +"%Y-%m-%d"
         echo "Actualización de ${HOY}"
