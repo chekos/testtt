@@ -13,6 +13,6 @@ jobs:
     steps:
     - name: probando
       env:
-        HOY: TZ=":America/Mexico_City" date +"%Y-%m-%d"
+        HOY: ${{TZ=":America/Mexico_City" date +"%Y-%m-%d"}}
       run: |
         echo "Actualización de ${HOY}"
