@@ -1,0 +1,17 @@
+name: probando evns
+
+on:
+  push:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: probando
+      env:
+        HOY: TZ=":America/Mexico_City" date +"%Y-%m-%d"
+      run: |
+        echo "Actualización de ${HOY}"
